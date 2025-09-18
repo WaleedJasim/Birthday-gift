@@ -1,4 +1,4 @@
-/* Keep the page clean and white */
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -21,7 +21,7 @@ h1 {
 
 textarea {
   width: 100%;
-  min-height: 240px; /* Make it nice and roomy */
+  min-height: 240px; 
   padding: 12px 14px;
   font-size: 16px;
   line-height: 1.5;
@@ -60,7 +60,7 @@ textarea:focus {
   color: #555;
 }
 
-/* Hide-only-for-visual label to make screen readers happy */
+
 .sr-only {
   position: absolute;
   width: 1px;
