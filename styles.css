@@ -1,0 +1,74 @@
+/* Keep the page clean and white */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px 40px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 16px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 240px; /* Make it nice and roomy */
+  padding: 12px 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #888;
+}
+
+.images {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.images figure {
+  margin: 0;
+  text-align: center;
+}
+
+.images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.images figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hide-only-for-visual label to make screen readers happy */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
